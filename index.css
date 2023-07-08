@@ -1,0 +1,80 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(67, 67, 252);
+}
+
+#app{
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    padding: 20px;
+}
+
+#time{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#time #value{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 300px;
+}
+
+button,
+input[type="submit"]{
+    border: none;
+    background-color: rgb(2, 58, 101);
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.task{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.task .completed{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.done{
+    display: inline-block;
+    padding: 5px;
+    background-color: #ccc;
+}
+
+.completed-task {
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+    0% { background-color: rgb(255, 0, 0); }
+    100% { background-color: transparent; }
+}
+
